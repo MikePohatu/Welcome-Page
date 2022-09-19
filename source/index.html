@@ -1,0 +1,148 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to your new device</title>
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+
+
+
+
+  <div class="grid-y grid-padding-y orbit" id="pagewrapper" role="region" aria-label="Welcome Pages" data-orbit
+    data-auto-play="false">
+
+    <div class="cell shrink" id="vheader">
+      <div class="grid-container">
+        <div class="grid-x grid-padding-x align-middle">
+          <div class="cell shrink">
+            <img id="logo" src="image/logo.png">
+          </div>
+          <div class="cell shrink">
+            <nav class="orbit-bullets">
+              <!-- Buttons for pages. Add a button if you add a page and increment the data-slide value -->
+              <button class="is-active" data-slide="0">
+                <span class="show-for-sr bullet">First page details</span>
+                <span class="show-for-sr bullet" data-slide-active-label>Current page</span>
+              </button>
+              <button data-slide="1"><span class="show-for-sr bullet">Second page details</span></button>
+            </nav>
+          </div>
+          <div class="cell auto">
+            <div class="grid-x grid-padding-x align-middle">
+              <div class="cell auto"></div>
+              <div class="cell shrink">
+                <button type="button" id="finishbtn" class="button" onclick="javascript:onCloseClicked()">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cell flex-child-grow" id="vcontent">
+      <div class="grid-container vfill">
+        <!-- https://foundation.zurb.com/sites/docs/orbit.html -->
+        <div class="grid-x grid-padding-x vfill">
+          <div class="cell large-12 vfill">
+
+            <div class="orbit-controls">
+              <button id="prevbtn" class="orbit-previous navigation-button"><span class="show-for-sr">Previous
+                  Page</span>&#9664;&#xFE0E;</button>
+              <button id="nextbtn" class="orbit-next navigation-button"><span class="show-for-sr">Next
+                  Page</span>&#9654;&#xFE0E;</button>
+            </div>
+            <div class="orbit-wrapper vfill page-content">
+              <ul class="orbit-container vfill">
+
+                <!-- Pages start here each li is a page -->
+
+                <!-- Page 1 -->
+                <li class="is-active orbit-slide">
+                  <div class="cell shrink" id="vheader">
+                    <div class="grid-container">
+                      <div class="grid-x grid-padding-x">
+                        <div class="cell large-12">
+                          <h4>Welcome to your new device</h4>
+                          <p>The following will guide you through some of the changes to your desktop environment</p>
+
+                          <p>If you need to view this guide again, you can find the <b>Welcome</b>
+                            icon in the Windows Start menu or on
+                            the desktop.
+                          </p>
+
+                          <img src="image/start_welcome.png" alt="welcomeicon"
+                            title="Welcome icon in Windows Start menu">
+                          <p>Click the arrow buttons to navigate through the guide</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <!-- Page 2 -->
+                <li class="orbit-slide">
+                  <div>
+                    <h5>I can't find my application</h5>
+                    <div class="grid-x grid-margin-x">
+                      <div class="cell medium-6 large-6">
+                        <p>If you can't find a required application on your device, try looking in the <b>Company
+                            Portal</b>
+                          app. Where applications are
+                          being deployed to your device by IT, they will be available for install on demand from here.
+                        </p>
+                      </div>
+                      <div class="cell medium-6 large-6">
+                        <img src="image/start_companyportal.png" title="Company Portal app in Windows Start menu">
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <h4>Where is Office?</h4>
+                    <div class="grid-x grid-margin-x">
+                      <div class="cell medium-6 large-6">
+                        <p>If you have an Office license assigned, the Office applications will be being installed for
+                          you
+                          in the background. In the meantime
+                          you can access Office Online by clicking <a href="https://portal.office.com" target="_blank">here</a>.</p>
+
+                        <p>Note that following the Office install, Microsoft Teams will only appear after a computer
+                          restart
+                        </p>
+                        <p>You can
+                          monitor the Office install by opening the Company Portal app navigating to the Downloads and
+                          Updates tab on the left.
+                        </p>
+                      </div>
+                      <div class="cell medium-6 large-6">
+                        <img src="image/company_portal_office_install.png" alt="office_install_status"
+                          title="Office install status">
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- Pages finish here -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/what-input.js"></script>
+  <script src="js/vendor/foundation.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
